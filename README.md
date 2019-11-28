@@ -10,9 +10,10 @@
 
 https://beta.docs.qmk.fm/newbs/newbs_getting_started
 
-## programming layout, has to be run for each side
+## programming layout, has to be run for each side 
 
-    make handwired/dactyl_manuform/5x6:default:dfu
+    make handwired/dactyl_promicro:default:dfu-split-left
+	make handwired/dactyl_promicro:default:dfu-split-right
 
 main side is defined by
 
@@ -40,7 +41,7 @@ A speaker can be hooked-up to either side to the `5` (`C6`) pin and `GND`, and t
 
 ![left](./images/left.png)
 ![right](./images/right.png)
-
+--------------------------------------------------------------------------------------
 The 3 wires of the TRS/TRRS cable need to connect GND, VCC, and digital pin 3 (i.e.
 PD0 on the ATmega32u4) between the two Pro Micros.
 
