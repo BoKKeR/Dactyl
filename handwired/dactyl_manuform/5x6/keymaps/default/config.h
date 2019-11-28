@@ -23,3 +23,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define SOFT_SERIAL_PIN D0
 #define USB_POLLING_INTERVAL_MS 10
 #define MASTER_LEFT
+#define EE_HANDS
+#define SPLIT_HAND_PIN D2
