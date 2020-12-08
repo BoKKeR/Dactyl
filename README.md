@@ -4,7 +4,12 @@
 
 ![](./bootloader/uno2promicro_icsp_bb.jpg) no cap needed
 
+flash uno with arduino-isp sketch.
+run make maker/keyboard/rev1:keymap:production to generate a production/bootloader file, production file contains both bootloader and fw. 
+
     avrdude.exe -p atmega32u4 -c stk500v1 -b 19200 -U lfuse:w:0x5e:m -U hfuse:w:0x99:m -U efuse:w:0xf3:m -U flash:w:"bootloader/promicro_dfu.hex":i -P PROGRAMMER_COM_PORT
+
+
 
 ## env setup
 
